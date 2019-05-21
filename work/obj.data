@@ -1,4 +1,4 @@
-classes = 4
+classes = 3
 train = ./work/train.txt
 test = ./work/test.txt
 names = /home/vasily/Projects/datasets/arduino_raspberry_metro/names.names
