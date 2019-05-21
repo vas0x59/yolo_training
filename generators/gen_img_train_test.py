@@ -1,4 +1,4 @@
-import argparser
+import argparse
 
 import glob
 import os
@@ -13,23 +13,23 @@ parser.add_argument("-p",
                     help="percentageTest",
                     type=int)
 parser.add_argument("-o",
-                    "--ouputDir",
+                    "--outputDir",
                     help="Path to the folder where the input .xml files are stored",
                     type=str)
 args = parser.parse_args()
 
-percentage_test = parser["percentageTest"]
-file_train = open(parser["outputDir"]+'/train.txt', 'w')
-file_test = open(parser["outputDir"]+'test.txt', 'w')
+percentage_test = args.percentageTest
+file_train = open(args.outputDir+'/train.txt', 'w+')
+file_test = open(args.outputDir+'/test.txt', 'w+')
 
 counter = 1
 index_test = round(100 / percentage_test)
-for pathAndFilename in glob.iglob(os.path.join(parser["inputDir"], "*.jpg")):
+for pathAndFilename in glob.iglob(os.path.join(args.inputDir, "*.jpg")):
     title, ext = os.path.splitext(os.path.basename(pathAndFilename))
 
     if counter == index_test:
         counter = 1
-        file_test.write(parser["inputDir"] + "/" + title + '.jpg' + "\n")
+        file_test.write(args.inputDir + "/" + title + '.jpg' + "\n")
     else:
-        file_train.write(parser["inputDir"] + "/" + title + '.jpg' + "\n")
+        file_train.write(args.inputDir + "/" + title + '.jpg' + "\n")
         counter = counter + 1

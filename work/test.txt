@@ -1,0 +1,8 @@
+/home/vasily/Projects/datasets/arduino_raspberry_metro/train/image053.png
+/home/vasily/Projects/datasets/arduino_raspberry_metro/train/image062.png
+/home/vasily/Projects/datasets/arduino_raspberry_metro/train/image047.png
+/home/vasily/Projects/datasets/arduino_raspberry_metro/train/image075.png
+/home/vasily/Projects/datasets/arduino_raspberry_metro/train/image016.png
+/home/vasily/Projects/datasets/arduino_raspberry_metro/train/image045.png
+/home/vasily/Projects/datasets/arduino_raspberry_metro/train/image086.png
+/home/vasily/Projects/datasets/arduino_raspberry_metro/train/image074.png

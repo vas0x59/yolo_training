@@ -1,4 +1,4 @@
-import argparser
+import argparse
 
 import glob
 import os
@@ -15,6 +15,6 @@ parser.add_argument("-o",
 args = parser.parse_args()
 file_train = open(args["outputFile"], 'w')
 
-for pathAndFilename in glob.iglob(os.path.join(parser["inputDir"], "*.jpg")):
+for pathAndFilename in glob.iglob(os.path.join(args["inputDir"], "*.jpg")):
     title, ext = os.path.splitext(os.path.basename(pathAndFilename))
-    file_train.write(parser["inputDir"] + "/" + title + '.jpg' + "\n")
+    file_train.write(args["inputDir"] + "/" + title + '.jpg' + "\n")

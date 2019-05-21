@@ -1,4 +1,4 @@
-import argparser
+import argparse
 
 import glob
 import os
@@ -22,12 +22,12 @@ parser.add_argument("-o",
                     type=str)
 args = parser.parse_args()
 
-file_classes = open(args["classes"], "r")
+file_classes = open(args.classes, "r")
 CLASSES = file_classes.read().split('\n')
 
-file_out = open(args["outputFile"], 'w')
-file_out.write("classes = " + str(len(CLASSES)))
-file_out.write("train = " + args["datasetPaths"] + '/train.txt')
-file_out.write("test = " + args["datasetPaths"] + '/test.txt')
-file_out.write("names = " + args["classes"])
-file_out.write("backup = " + args["backupDir"]+'/')
+file_out = open(args.outputFile, 'w')
+file_out.write("classes = " + str(len(CLASSES)) + "\n")
+file_out.write("train = " + args.datasetPaths + '/train.txt' + "\n")
+file_out.write("test = " + args.datasetPaths + '/test.txt' + "\n")
+file_out.write("names = " + args.classes + "\n")
+file_out.write("backup = " + args.backupDir+'/' + "\n")
