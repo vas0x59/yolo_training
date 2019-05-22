@@ -49,7 +49,7 @@ cfg_file = open(args.cfgFile, 'r')
 cfg = cfg_file.readlines()
 
 cfg[2] = "batch=" + str(args.bathSize) + "\n"
-cfg[3] = "subdivisions=" + str(24) + "\n"
+cfg[3] = "subdivisions=" + str(8) + "\n"
 
 cfg[126] = "filters=" + str((len(CLASSES) + 5)*3) + "\n"
 cfg[170] = "filters=" + str((len(CLASSES) + 5)*3) + "\n"
