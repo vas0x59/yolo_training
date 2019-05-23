@@ -7,7 +7,7 @@ in_dir="/home/vasily/Projects/datasets/arduino_raspberry_metro/yolo"
 classes="/home/vasily/Projects/datasets/arduino_raspberry_metro/names.names"
 work_dir="./work_416"
 cfg="./cfgs/yolov3_tiny.cfg"
-bs=24
+bs=38
 per=10
 
 echo "gen_img_train_test"
