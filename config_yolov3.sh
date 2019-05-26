@@ -7,7 +7,7 @@ in_dir="/home/vasily/Projects/datasets/arduino_raspberry_metro/yolo"
 classes="/home/vasily/Projects/datasets/arduino_raspberry_metro/names.names"
 work_dir="./work_416"
 cfg="./cfgs/yolov3.cfg"
-bs=38
+bs=5
 per=10
 mkdir $work_dir
 mkdir $work_dir"/backup"

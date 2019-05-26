@@ -3,11 +3,11 @@
 echo "Hello world"
 
 # Configs
-in_dir="/home/vasily/Projects/datasets/arduino_raspberry_metro/yolo"
-classes="/home/vasily/Projects/datasets/arduino_raspberry_metro/names.names"
-work_dir="./work_416"
+in_dir="/home/vasily/Projects/datasets/small_danon/small_yolo"
+classes="/home/vasily/Projects/datasets/small_danon/names.names"
+work_dir="./danon"
 cfg="./cfgs/yolov3_tiny.cfg"
-bs=38
+bs=5
 per=10
 mkdir $work_dir
 mkdir $work_dir"/backup"
