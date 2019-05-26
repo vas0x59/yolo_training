@@ -9,7 +9,8 @@ work_dir="./work_416"
 cfg="./cfgs/yolov3_tiny.cfg"
 bs=38
 per=10
-
+mkdir $work_dir
+mkdir $work_dir"/backup"
 echo "gen_img_train_test"
 python ./generators/gen_img_train_test.py -i $in_dir -p $per -o $work_dir
 
